@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="VIT-AP Tech Fest">
+ 
+  <title>VIT-AP Tech Fest</title>
+
+  <!-- Bootstrap -->
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
+  <link href="css/themify-icons.css" rel="stylesheet">
+  <link href='css/dosis-font.css' rel='stylesheet' type='text/css'>
+  <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+  <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+  <![endif]-->
+</head>
+
+<body id="page-top" data-spy="scroll" data-target=".side-menu">
+  <nav class="side-menu">
+    <ul>
+      <li class="hidden active">
+        <a class="page-scroll" href="#page-top"></a>
+      </li>
+      <li>
+        <a href="#home" class="page-scroll">
+          <span class="menu-title">Home</span>
+          <span class="dot"></span>
+        </a>
+      </li>
+      <li>
+        <a href="#speakers" class="page-scroll">
+          <span class="menu-title">Speakers</span>
+          <span class="dot"></span>
+        </a>
+      </li>
+      <li>
+        <a href="#tickets" class="page-scroll">
+          <span class="menu-title">Buy Tickets</span>
+          <span class="dot"></span>
+        </a>
+      </li>
+      <li>
+        <a href="#schedule" class="page-scroll">
+          <span class="menu-title">Schedule</span>
+          <span class="dot"></span>
+        </a>
+      </li>
+    </ul>
+  </nav>
+  <div class="container-fluid">
+    <!-- Start: Header -->
+    <div class="row hero-header" id="home">
+      <div class="col-md-7">
+        <img src="data:image/png;base64,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" class="logo">
+        <h1>VIT-AP Tech Fest </h1>
+        <h3>Register Now</h3>
+        
+        <div class="container campus-life">
+          <p style="color: white; font-size: 18px; font-weight: bold;">Click on the <a href="https://vitap.ac.in/campus-life/overview/" style="color: white; text-decoration: underline;">link</a> to check out campus life.</p>
+          <a href="https://vitap.ac.in/" style="color: white;">
+            <h4 style="font-size: 18px; font-weight: bold;">Click on this link to visit our official website</h4>
+          </a>
+          
+        </div>
+        <a href="#" class="btn btn-lg btn-red">Buy Tickets Now <span class="ti-arrow-right"></span></a>
+        <p> By: Aparna Supriya Suresh 20MIS7062</p>
+
+      </div>
+      <div class="col-md-5 hidden-xs">
+        <img src="img/rocket.png" class="rocket animated bounce">
+      </div>
+    </div>
+    <!-- End: Header -->
+  </div>
+  <div class="container">
+    <!-- Start: Desc -->
+    <div class="row me-row content-ct">
+      <h2 class="row-title">Why This Event Is Super Cool?</h2>
+      <div class="col-md-4 feature">
+        <span class="ti-ticket"></span>
+        <h3>Buy Early Bird Tickets</h3>
+        <p>Super cool discounts if you purchase early bird tickets now. Limited tickets available with some awesome
+          perks and goodies!</p>
+      </div>
+      <div class="col-md-4 feature">
+        <span class="ti-microphone"></span>
+        <h3>Expert Speakers</h3>
+        <p>Best in class expert speakers who have extensive knowledge of the topic. All speakers are curated by the
+          panel of experts.</p>
+      </div>
+      <div class="col-md-4 feature">
+        <span class="ti-world"></span>
+        <h3>People around the globe!</h3>
+        <p>Meet the people attending this event around the globe. This will be the best opportunity to meet and greet
+          people from your industry.</p>
+      </div>
+    </div>
+    <!-- End: Desc -->
+
+    <!-- Start: Speakers -->
+    <div class="row me-row content-ct speaker" id="speakers">
+      <h2 class="row-title">Meet the Speakers</h2>
+      <div class="col-md-4 col-sm-6 feature">
+        <img src="img/speaker-1.png" class="speaker-img">
+        <h3>Simon Collins</h3>
+        <p>Simon is designer and partner at Fictivekin and has worked in a variety of situations for bands, record
+          labels, governments, polar explorers, and most other things...</p>
+        <ul class="speaker-social">
+          <li><a href="#"><span class="ti-facebook"></span></a></li>
+          <li><a href="#"><span class="ti-twitter-alt"></span></a></li>
+          <li><a href="#"><span class="ti-linkedin"></span></a></li>
+        </ul>
+      </div>
+      <div class="col-md-4 col-sm-6 feature">
+        <img src="img/speaker-2.png" class="speaker-img">
+        <h3>Stephanie Troeth</h3>
+        <p>Stephie is a user experience researcher and designer. In over 15 years of working on the web, she has worn
+          many hats, including a product lead for a tech startup in publishing...</p>
+        <ul class="speaker-social">
+          <li><a href="#"><span class="ti-facebook"></span></a></li>
+          <li><a href="#"><span class="ti-twitter-alt"></span></a></li>
+          <li><a href="#"><span class="ti-linkedin"></span></a></li>
+        </ul>
+      </div>
+      <div class="col-md-4 col-sm-6 feature">
+        <img src="img/speaker-3.png" class="speaker-img">
+        <h3>Harry Roberts</h3>
+        <p>Harry is a freelance designer, developer, writer, speaker and front-end architect from the UK, previously
+          working as Senior UI Developer for Sky. He Tweets at...</p>
+        <ul class="speaker-social">
+          <li><a href="#"><span class="ti-facebook"></span></a></li>
+          <li><a href="#"><span class="ti-twitter-alt"></span></a></li>
+          <li><a href="#"><span class="ti-linkedin"></span></a></li>
+        </ul>
+      </div>
+      <div class="col-md-4 col-sm-6 feature">
+        <img src="img/speaker-4.png" class="speaker-img">
+        <h3>Geri Coady</h3>
+        <p>Harry is a freelance designer, developer, writer, speaker and front-end architect from the UK, previously
+          working as Senior UI Developer for Sky. He Tweets at...</p>
+        <ul class="speaker-social">
+          <li><a href="#"><span class="ti-facebook"></span></a></li>
+          <li><a href="#"><span class="ti-twitter-alt"></span></a></li>
+          <li><a href="#"><span class="ti-linkedin"></span></a></li>
+        </ul>
+      </div>
+      <div class="col-md-4 col-sm-6 feature">
+        <img src="img/speaker-5.png" class="speaker-img">
+        <h3>Andy Budd</h3>
+        <p>Harry is a freelance designer, developer, writer, speaker and front-end architect from the UK, previously
+          working as Senior UI Developer for Sky. He Tweets at...</p>
+        <ul class="speaker-social">
+          <li><a href="#"><span class="ti-facebook"></span></a></li>
+          <li><a href="#"><span class="ti-twitter-alt"></span></a></li>
+          <li><a href="#"><span class="ti-linkedin"></span></a></li>
+        </ul>
+      </div>
+      <div class="col-md-4 col-sm-6 feature">
+        <img src="img/speaker-6.png" class="speaker-img">
+        <h3>Christian Lauke</h3>
+        <p>Harry is a freelance designer, developer, writer, speaker and front-end architect from the UK, previously
+          working as Senior UI Developer for Sky. He Tweets at...</p>
+        <ul class="speaker-social">
+          <li><a href="#"><span class="ti-facebook"></span></a></li>
+          <li><a href="#"><span class="ti-twitter-alt"></span></a></li>
+          <li><a href="#"><span class="ti-linkedin"></span></a></li>
+        </ul>
+      </div>
+    </div>
+    <!-- End: Speakers -->
+  </div>
+
+ <!-- Start: Tickets -->
+<div class="container-fluid tickets" id="tickets">
+  <div class="row me-row content-ct">
+    <h2 class="row-title">Buy Tickets</h2>
+    <div class="col-md-4 col-sm-6 col-md-offset-2">
+      <h3>Early Bird Ticket</h3>
+      <p class="price">₹399</p>
+      <p>All days entry pass for all the events.</p>
+      <a href="#" class="btn btn-lg btn-red">Buy <small>(6 remaining)</small></a>
+    </div>
+    <div class="col-md-4 col-sm-6">
+      <h3>Workshop Pass</h3>
+      <p class="price">₹199</p>
+      <p>Entry pass for each workshop</p>
+      <a href="#" class="btn btn-lg btn-red">Buy <small>(42 remaining)</small></a>
+    </div>
+  </div>
+</div>
+<!-- End: Tickets -->
+
+
+  <!-- Start: Schedule -->
+  <div class="container">
+    <div class="row me-row schedule" id="schedule">
+      <h2 class="row-title content-ct">Event Schedule</h2>
+      <div class="col-md-12">
+        <!-- Nav tabs -->
+        <ul class="nav nav-tabs" role="tablist">
+          <li role="presentation" class="active"><a href="#day-1" aria-controls="home" role="tab" data-toggle="tab">Day
+              01 <small class="hidden-xs">(20<sup>th</sup>, October)</small></a></li>
+          <li role="presentation"><a href="#day-2" aria-controls="profile" role="tab" data-toggle="tab">Day 02 <small
+                class="hidden-xs">(21<sup>st</sup>, October)</small></a></li>
+          <li role="presentation"><a href="#day-3" aria-controls="messages" role="tab" data-toggle="tab">Day 03 <small
+                class="hidden-xs">(22<sup>nd</sup>, October)</small></a></li>
+        </ul>
+
+        <!-- Tab panes -->
+        <div class="tab-content">
+          <div role="tabpanel" class="tab-pane fade in active" id="day-1">
+            <div class="row">
+              <div class="col-md-6">
+                <div class="media">
+                  <div class="media-left">
+                    <a href="#">
+                      <img class="media-object" src="img/speaker-1.png" alt="...">
+                    </a>
+                  </div>
+                  <div class="media-body">
+                    <h4 class="media-heading">10am to 10:30am</h4>
+                    <h5>THE DESIGNER’S GUIDE TO BEING ESSENTIAL</h5>
+                    <p>Simon is designer and partner at Fictivekin and has worked in a variety of situations for bands,
+                      record labels, governments, polar explorers, and most other things. </p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="media">
+                  <div class="media-left">
+                    <a href="#">
+                      <img class="media-object" src="img/speaker-2.png" alt="...">
+                    </a>
+                  </div>
+                  <div class="media-body">
+                    <h4 class="media-heading">10:45am to 11:30am</h4>
+                    <h5>MODULAR DESIGN AT WORK</h5>
+                    <p>Simon is designer and partner at Fictivekin and has worked in a variety of situations for bands,
+                      record labels, governments, polar explorers, and most other things. </p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="media">
+                  <div class="media-left">
+                    <a href="#">
+                      <img class="media-object" src="img/speaker-3.png" alt="...">
+                    </a>
+                  </div>
+                  <div class="media-body">
+                    <h4 class="media-heading">12:00pm to 01:30pm</h4>
+                    <h5>AN INTRODUCTION TO TOUCH AND POINTER EVENTS</h5>
+                    <p>Simon is designer and partner at Fictivekin and has worked in a variety of situations for bands,
+                      record labels, governments, polar explorers, and most other things. </p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="media">
+                  <div class="media-left">
+                    <a href="#">
+                      <img class="media-object" src="img/speaker-4.png" alt="...">
+                    </a>
+                  </div>
+                  <div class="media-body">
+                    <h4 class="media-heading">02:00pm to 03.30pm</h4>
+                    <h5>WEB FONTS PERFORMANCE</h5>
+                    <p>Simon is designer and partner at Fictivekin and has worked in a variety of situations for bands,
+                      record labels, governments, polar explorers, and most other things. </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div role="tabpanel" class="tab-pane fade" id="day-2">
+            <div class="row">
+              <div class="col-md-6">
+                <div class="media">
+                  <div class="media-left">
+                    <a href="#">
+                      <img class="media-object" src="img/speaker-4.png" alt="...">
+                    </a>
+                  </div>
+                  <div class="media-body">
+                    <h4 class="media-heading">10am to 10:30am</h4>
+                    <h5>MAKING DOG FOOD PART OF A BALANCED DIET</h5>
+                    <p>Simon is designer and partner at Fictivekin and has worked in a variety of situations for bands,
+                      record labels, governments, polar explorers, and most other things. </p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="media">
+                  <div class="media-left">
+                    <a href="#">
+                      <img class="media-object" src="img/speaker-3.png" alt="...">
+                    </a>
+                  </div>
+                  <div class="media-body">
+                    <h4 class="media-heading">10:45am to 11:30am</h4>
+                    <h5>HANDS-ON WEB AUDIO</h5>
+                    <p>Simon is designer and partner at Fictivekin and has worked in a variety of situations for bands,
+                      record labels, governments, polar explorers, and most other things. </p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="media">
+                  <div class="media-left">
+                    <a href="#">
+                      <img class="media-object" src="img/speaker-2.png" alt="...">
+                    </a>
+                  </div>
+                  <div class="media-body">
+                    <h4 class="media-heading">12:00pm to 01:30pm</h4>
+                    <h5>CONVERSION RATE OPTIMIZATION TECHNIQUES IN ECOMMERCE</h5>
+                    <p>Simon is designer and partner at Fictivekin and has worked in a variety of situations for bands,
+                      record labels, governments, polar explorers, and most other things. </p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="media">
+                  <div class="media-left">
+                    <a href="#">
+                      <img class="media-object" src="img/speaker-1.png" alt="...">
+                    </a>
+                  </div>
+                  <div class="media-body">
+                    <h4 class="media-heading">02:00pm to 03.30pm</h4>
+                    <h5>PAPER PROTOTYPING APPLICATIONS</h5>
+                    <p>Simon is designer and partner at Fictivekin and has worked in a variety of situations for bands,
+                      record labels, governments, polar explorers, and most other things. </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div role="tabpanel" class="tab-pane fade" id="day-3">
+            <div class="row">
+              <div class="col-md-6">
+                <div class="media">
+                  <div class="media-left">
+                    <a href="#">
+                      <img class="media-object" src="img/speaker-6.png" alt="...">
+                    </a>
+                  </div>
+                  <div class="media-body">
+                    <h4 class="media-heading">10am to 10:30am</h4>
+                    <h5>THE DESIGNER’S GUIDE TO BEING ESSENTIAL</h5>
+                    <p>Simon is designer and partner at Fictivekin and has worked in a variety of situations for bands,
+                      record labels, governments, polar explorers, and most other things. </p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="media">
+                  <div class="media-left">
+                    <a href="#">
+                      <img class="media-object" src="img/speaker-5.png" alt="...">
+                    </a>
+                  </div>
+                  <div class="media-body">
+                    <h4 class="media-heading">10:45am to 11:30am</h4>
+                    <h5>THE DESIGNER’S GUIDE TO BEING ESSENTIAL</h5>
+                    <p>Simon is designer and partner at Fictivekin and has worked in a variety of situations for bands,
+                      record labels, governments, polar explorers, and most other things. </p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="media">
+                  <div class="media-left">
+                    <a href="#">
+                      <img class="media-object" src="img/speaker-3.png" alt="...">
+                    </a>
+                  </div>
+                  <div class="media-body">
+                    <h4 class="media-heading">12:00pm to 01:30pm</h4>
+                    <h5>THE DESIGNER’S GUIDE TO BEING ESSENTIAL</h5>
+                    <p>Simon is designer and partner at Fictivekin and has worked in a variety of situations for bands,
+                      record labels, governments, polar explorers, and most other things. </p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="media">
+                  <div class="media-left">
+                    <a href="#">
+                      <img class="media-object" src="img/speaker-4.png" alt="...">
+                    </a>
+                  </div>
+                  <div class="media-body">
+                    <h4 class="media-heading">02:00pm to 03.30pm</h4>
+                    <h5>THE DESIGNER’S GUIDE TO BEING ESSENTIAL</h5>
+                    <p>Simon is designer and partner at Fictivekin and has worked in a variety of situations for bands,
+                      record labels, governments, polar explorers, and most other things. </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- End: Schedule -->
+
+  <!-- Start: Footer -->
+  <div class="container-fluid footer">
+    <div class="row contact">
+      <div class="col-md-6 contact-form">
+        <h3 class="content-ct"><span class="ti-email"></span> Contact Form</h3>
+        <form class="form-horizontal" data-toggle="validator" role="form">
+          <div class="form-group">
+            <label for="name" class="col-sm-3 control-label">Name<sup>*</sup></label>
+            <div class="col-sm-9">
+              <input type="text" class="form-control" id="name" placeholder="John Doe" required>
+              <div class="help-block with-errors pull-right"></div>
+              <span class="form-control-feedback" aria-hidden="true"></span>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="email" class="col-sm-3 control-label">Email<sup>*</sup></label>
+            <div class="col-sm-9">
+              <input type="email" class="form-control" id="email" placeholder="you@youremail.com" required>
+              <div class="help-block with-errors pull-right"></div>
+              <span class="form-control-feedback" aria-hidden="true"></span>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="message" class="col-sm-3 control-label">Your Message<sup>*</sup></label>
+            <div class="col-sm-9">
+              <textarea id="message" class="form-control" rows="3" required></textarea>
+              <div class="help-block with-errors pull-right"></div>
+              <span class="form-control-feedback" aria-hidden="true"></span>
+            </div>
+          </div>
+          <div class="form-group">
+            <div class="col-sm-offset-3 col-sm-9">
+              <button type="submit" id="submit" name="submit" class="btn btn-yellow pull-right">Send <span
+                  class="ti-arrow-right"></span></button>
+            </div>
+          </div>
+        </form>
+      </div>
+      <div class="col-md-4 col-md-offset-1 content-ct">
+        <h3><span class="ti-twitter"></span> Twitter Feed</h3>
+        <p>Lorem <a href="#">#Ipsum</a> is a dummy text used as a text filler in designs. This is just a dummy text. via
+          <a href="#">@designerdada</a> </p>
+        <hr>
+        <p>Lorem Ipsum is a <a href="#">#dummy</a> text used as a text filler in designs. This is just a dummy text. via
+          <a href="#">@designerdada</a> </p>
+        <hr>
+        <p>Lorem Ipsum is a <a href="#">#dummy</a> text used as a text filler in designs. This is just a dummy text. via
+          <a href="#">@designerdada</a> </p>
+      </div>
+    </div>
+    <div class="row footer-credit">
+      <div class="col-md-6 col-sm-6">
+        <p>&copy; 2015, <a href="http://www.designerdada.com">DesignerDada.com</a> | All rights reserved.</p>
+      </div>
+      <div class="col-md-6 col-sm-6">
+        <ul class="footer-menu">
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">Privacy Policy</a></li>
+          <li><a href="#">Terms &amp; Condition</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <!-- End: Footer -->
+
+  <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+  <script src="js/jquery.min.js"></script>
+  <!-- Include all compiled plugins (below), or include individual files as needed -->
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/jquery.easing.min.js"></script>
+  <script src="js/scrolling-nav.js"></script>
+  <script src="js/validator.js"></script>
+
+</body>
+
+</html>
